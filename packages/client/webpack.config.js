@@ -1,0 +1,25 @@
+const path = require('path');
+
+module.exports = {
+  mode: process.env.NODE_ENV,
+  entry: './src/index.tsx',
+  output: {
+    path: `${__dirname}`,
+    filename: 'public/index.js',
+    libraryTarget: 'this',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      '@': path.resolve(__dirname, './'),
+    },
+  },
+};
