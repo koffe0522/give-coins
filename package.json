@@ -1,0 +1,19 @@
+{
+  "name": "give-coins",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client": "yarn workspace client",
+    "lambda": "yarn workspace lambda"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  }
+}
