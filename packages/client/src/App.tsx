@@ -1,10 +1,15 @@
 import React from 'react';
+import { css } from '@emotion/core'
+
+const styles = {
+  text: css({color: 'red!important'})
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <p css={styles.text}>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
