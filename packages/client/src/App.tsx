@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { css } from '@emotion/core'
+
+const styles = {
+  text: css({color: 'red!important'})
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p css={styles.text}>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
