@@ -16,15 +16,16 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "outDir": "./", 
+    "outDir": "./",
     "jsx": "preserve",
-    "baseUrl":".",
-    "paths": {
-      "@/*": ["./*"]
-    },
+    "baseUrl": ".",
   },
   "include": [
     "src/**/*"
   ],
-  "exclude": ["node_modules", ".dist"],
+  "exclude": [
+    "node_modules",
+    ".dist"
+  ],
+  "extends": "./tsconfig.path.json"
 }

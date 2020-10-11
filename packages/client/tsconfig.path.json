@@ -1,0 +1,8 @@
+/*
+* ReactのServerを使用するとtsconfigが初期化されるので初期設定との差分のみ退避
+*/
+{
+  "compilerOptions": {
+    "noEmit": false
+  } 
+}
