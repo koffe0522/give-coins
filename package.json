@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "client": "yarn workspace client",
-    "lambda": "yarn workspace lambda"
+    "infra": "yarn workspace infra"
   },
   "workspaces": {
     "packages": [
