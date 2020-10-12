@@ -24,7 +24,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "webpack:dev": "NODE_ENV=development webpack",
-    "webpack:prod": "NODE_ENV=production webpack"
+    "webpack:dev:watch": "NODE_ENV=development webpack --watch",
+    "webpack:prod": "NODE_ENV=production webpack",
+    "webpack:prod:watch": "NODE_ENV=production webpack --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
