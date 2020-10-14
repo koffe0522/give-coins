@@ -19,7 +19,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
-      src: path.resolve(__dirname, './src'),
+      src: path.resolve(__dirname, './src'), //srcをrootに
     },
   },
 };

@@ -1,13 +1,12 @@
-import React from 'react';
-import { css } from '@emotion/core'
+/** @jsx jsx */
+import { css,jsx } from '@emotion/core'
 import AppButton from 'src/components/atoms/AppButton'
 
 const styles = {
   text: css({color: 'green!important'})
 }
 
-function App() {
-  console.log(css);
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -27,7 +26,7 @@ function App() {
           text={'メインコインを付与'}
           fontSize={'18px'}
           textColor={'white'}
-          backgroundColor={'green'}
+          backgroundColor={'#27AE60'}
           width={'100%'}
         />
         <AppButton 
@@ -35,7 +34,7 @@ function App() {
           text={'がんばってるコインを付与'}
           fontSize={'18px'}
           textColor={'white'}
-          backgroundColor={'green'}
+          backgroundColor={'orange'}
           width={'100%'}
         />
         <AppButton 
@@ -43,7 +42,7 @@ function App() {
           text={'イベントコインを申請'}
           fontSize={'18px'}
           textColor={'white'}
-          backgroundColor={'green'}
+          backgroundColor={'#56ccf2'}
           width={'100%'}
         />
       </header>

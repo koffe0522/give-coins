@@ -1,5 +1,7 @@
-import React from 'react';
-import { css } from '@emotion/core'
+import  { useState } from 'react';
+// NOTE:: 下記の記述はemotionの特殊なコンパイラを使用するために記述する必要がある
+/** @jsx jsx */
+import { css,jsx } from '@emotion/core'
 
 type ButtonProps = {
   url?: string
@@ -12,6 +14,7 @@ type ButtonProps = {
 }
 
 function AppButton(props: ButtonProps) {
+  const [testData,setTestData] = useState(1)
 
   const styles = {
     button: css({
@@ -24,25 +27,15 @@ function AppButton(props: ButtonProps) {
       textDecoration:'none',
       textAlign:'center',
       borderRadius:'10px',
+      marginBottom:'10px',
+      padding:'10px',
+      '&hover': {
+        color: 'white'
+      },
     })
   }
 
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <p css={styles.text}>
-    //       Edit <code>src/App.tsx</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
     <a href="{props.url}" css={styles.button}>
       { props.text }
     </a>

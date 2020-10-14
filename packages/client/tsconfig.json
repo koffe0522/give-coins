@@ -19,6 +19,9 @@
     "outDir": "./",
     "jsx": "preserve",
     "baseUrl": ".",
+    // NOTE:: react scripts を使用してbuildすると記述される
+    // webpackによるbuildを行いたい時は消す必要がある
+    "noEmit": true 
   },
   "include": [
     "src/**/*"
