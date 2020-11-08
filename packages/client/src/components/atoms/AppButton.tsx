@@ -14,7 +14,6 @@ type ButtonProps = {
 }
 
 function AppButton(props: ButtonProps) {
-  const [testData,setTestData] = useState(1)
 
   const styles = {
     button: css({
